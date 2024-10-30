@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" >
+        <link rel="stylesheet" href="stylesheet.css>"
+        <title>ACTIVITY 4 RESUME</title>
+    </head>
+<body>
+    
+    <section class="resume">
+        <div class="resume_left">
+          <div class="r_profile_pic">
+            <img src="https://i.imgur.com/x3omKbe.png" alt="profile_pic">
+          </div>
+          <div class="r_left_sub">
+            <div class="r_aboutme">
+              <h2>About me</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa earum optio id iure reprehenderit accusamus quisquam accusantium nulla? Dolorum ipsa sed perspiciatis nemo aliquam quibusdam, alias quae totam nulla nihil.</p>
+            </div>
+    
+    
+</body>
+    </html>
+
+
+:root {
+    --bg-clr: #6b7fba;
+    --white: #fff;
+    --rleft-bg: #9ab3eb;
+    --rright-bg: #8096d0;
+    --primary-text-clr: #525252;
+  }
+
+body {
+    background: var(--bg-clr);
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--primary-text-clr);
+    padding: 0 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+h2 {
+    font-family: "Calligraffitti", cursive;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .resume {
+    width: 800px;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    margin: 50px auto;
+    background: var(--white);
+  }
+  
+  .resume .resume_left {
+    width: 270px;
+  }
+  
+  .resume .resume_right {
+    background: var(--rright-bg);
+    width: calc(800px - 270px);
+  }
+  
+  .resume_left .r_profile_pic,
+  .resume_right .r_namerole {
+    width: 100%;
+    height: 260px;
+    padding: 35px;
+  }
+  
+  .resume_left .r_profile_pic {
+    background: var(--rleft-bg);
+  }
+  
+  .resume_left .r_profile_pic img {
+    width: 100%;
+  }
+  
+  .resume_left .r_left_sub {
+    padding: 35px;
+  }
+  
+  .resume_left .r_left_sub > div:not(:last-child),
+  .resume_right .r_right_sub > div:not(:last-child) {
+    margin-bottom: 35px;
+  }
+  
+  .resume_left .r_aboutme p {
+    text-align: center;
+  }
